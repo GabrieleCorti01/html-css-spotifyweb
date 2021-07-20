@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.flex-box{
+    display: flex;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    max-width: 1300px;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(8,11,18,255);
+    padding: 20px 5px 20px 0;
+}
+
+#upgrade-button{
+    padding: 10px 25px 10px 25px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-size: 0.9em;
+}
+
+#navi-colonna{
+    width: 20%;
+    height: 100vh;
+    background-color: rgba(0,0,0,255);
+}
+
+
