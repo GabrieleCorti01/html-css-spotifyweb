@@ -89,7 +89,7 @@ li i{
 }
 
 .container-profilo{
-    height: 370px;
+    height: 470px;
 }
 
 .profilo-download{
@@ -98,12 +98,38 @@ li i{
     height: 100%;
 }
 
+.profilo-download span{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+}
+
+.profilo-download i{
+    padding-right: 10px;
+}
+
+.profilo-download div{
+    vertical-align: middle;
+    border-top: 1px solid rgb(211, 211, 211);
+    padding-top: 10px;
+}
+
+.profilo-download div span{
+    font-size: 0.8em;
+    color: white;
+    font-weight: 700;
+}
+
+.profilo-download  div i{
+    font-size: 1.5em;
+}
+
 #barra-navigazione{
     width: 200px;
-    max-height: calc(100vh - 100px);
+    height: 100%;
     background-color: black;
     color: rgb(211, 211, 211);
     padding: 20px;
+    flex-direction: column;
 }
 
  #container-main{
