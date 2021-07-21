@@ -15,54 +15,28 @@
 
 </head>
 <body>
-    <div class="container clearfix">
-
-        <header>
-            <div class="float-right" id="upgrade-button">
-                EFFETTUA L'UPGRADE
-            </div>
-        </header>
-
-        <section id="colonna-laterale">
-            <div class="colonna-sinistra flex-box">
-                <img id="logo-spotify" src="img/logo.svg" alt="">
-                <nav>
-                    <ul>
-                        <li><i class="fas fa-home"></i><span> Home</span></li>
-                        <li><i class="fas fa-search"></i><span> Cerca</span></li>
-                        <li><i class="fab fa-vine"></i><span> La tua libreria</span></li>
-                    </ul>
-                </nav>
-                <div class="playlist-colonna">
-                    <div>
-                        <h3>PLAYLIST</h3>
-                        <div id="titolo-playlist">
-                            <i class="fas fa-plus-square"></i><span>Crea playlist</span>
-                        </div>
-                        <ul>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                            <li>Nome Playlist</li>
-                        </ul>
-                    </div>
-                </div>
+    <!-- CONTAINER RESET FLEXBOX -->
+    <div class="container">
+        <main class="clearfix">
+            
+            <nav class="fl" id="barra-navigazione">
                 
-                <div id="footer-colonna">
-                    <i class="far fa-arrow-alt-circle-down"></i> <span>Installa app</span>
-                    <div id="user-container">
-                        <i class="far fa-user"></i><span> John Doe</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <main>
+            </nav>
 
+            <section class="fl" id="container-main">
+                
+                <div class="flex-box" id="container-upgrade">
+                    <div id="upgrade-button">EFFETTUA L'UPGRADE</div>
+                </div>
+                <nav></nav>
+                <section class="song-list"></section>
+
+            </section>
         </main>
+
+        <footer>
+            <div id="container-footer"></div>
+        </footer>
     </div>
 </body>
 </html>
