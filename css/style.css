@@ -9,18 +9,10 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-footer{
-    position: relative;
-}
-
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-main{
-    height: 100%;
 }
 
 nav img{
@@ -37,12 +29,6 @@ nav img{
 
 .flex-box{
     display: flex;
-}
-
-.container{
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-color: lightskyblue;
 }
 
 .lista-sidebar{
@@ -125,36 +111,17 @@ li i{
 
 #barra-navigazione{
     width: 200px;
-    height: 100%;
+    height: calc(100% - 100px);
     background-color: black;
     color: rgb(211, 211, 211);
-    padding: 20px;
+    padding: 25px;
     flex-direction: column;
 }
 
- #container-main{
+#container-main{
+    background-color: thistle;
     width: calc(100% - 200px);
-    height: 100%;
-}
-
-#container-upgrade{
-    height: 100px;
-    width: calc(100% - 200px);
-    background-color: rgba(8,11,18,255);
-    position: fixed;
-    z-index: 100;
-    justify-content: flex-end;
-    align-items: center;    
-}
-
-#upgrade-button{
-    font-size: 0.8em;
-    font-weight: 700;
-    color: white;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 7px 20px 7px 20px;
-    margin-right: 10px;
+    height: 500px;
 }
 
 #container-footer{
@@ -162,5 +129,5 @@ li i{
     width: 100%;
     background-color: magenta;
     z-index: 1000;
-    position: absolute;
+    position: fixed;
 }
