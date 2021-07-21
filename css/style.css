@@ -23,6 +23,10 @@ main{
     height: 100%;
 }
 
+nav img{
+    height: 40px;
+}
+
 .fr{
     float: right;
 }
@@ -41,10 +45,65 @@ main{
     background-color: lightskyblue;
 }
 
+.lista-sidebar{
+    list-style: none;
+    padding-top: 20px;
+}
+
+.lista-sidebar li{
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+li i{
+    font-size: 1.7em;
+    padding-right: 10px;
+}
+
+.container-playlist h3{
+    color: white;
+    font-size: 0.9em;
+    padding-top: 30px;
+}
+
+.container-playlist div{
+    font-size: 0.8em;
+    padding-top: 10px;
+    
+}
+
+.container-playlist i{
+    font-size: 2.8em;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.lista-playlist{
+    list-style: none;
+    padding-top: 15px;
+}
+
+.lista-playlist li{
+    padding-bottom: 15px;
+    font-size: 0.8em;
+}
+
+.container-profilo{
+    height: 370px;
+}
+
+.profilo-download{
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
 #barra-navigazione{
     width: 200px;
-    height: 100%;
-    background-color: greenyellow;
+    max-height: calc(100vh - 100px);
+    background-color: black;
+    color: rgb(211, 211, 211);
+    padding: 20px;
 }
 
  #container-main{
