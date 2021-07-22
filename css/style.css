@@ -88,6 +88,10 @@ body{
     background-size: cover;
 }
 
+.immagine-circolare{
+    border-radius: 100%;
+}
+
 .container-footer{
     justify-content: space-between;
     
@@ -138,7 +142,7 @@ body{
 .icone-superiori{
     color: white;
     font-size: 1.1em;
-    width: 500px;
+    width: 40%;
     text-align: center;
     padding-top: 20px;
 }
@@ -192,6 +196,7 @@ body{
     padding: 20px;
     color: rgb(167, 167, 167);
     position: relative;
+    overflow: hidden;
 }
 
 #sidebar-navi-sx{
@@ -296,6 +301,7 @@ nav h3{
 #navi-elementi{
     width: 100%;
     justify-content: center;
+    text-align: center;
 }
 
 #navi-elementi ul{
@@ -346,15 +352,10 @@ nav h3{
     border-radius: 50%;
 }
 
-/* @media screen and (max-width: 1000px) {
-    .riga-contenitore-elementi{
-        flex-wrap: wrap;
-    }
-} */
-
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
     #sidebar-nav{
         width: 50px;
+        padding: 20px 0 0 15px;
     }
 
     .lista-sidebar span{
@@ -385,6 +386,22 @@ nav h3{
     #main-section{
         width: calc(100% - 50px);
     }
+    
+    .icone-superiori{
+        width: 30%;
+    }
+
+    .icone-superiori, i, .play-button{
+        font-size: 0.8em;
+    }
+
+    .icone-destra-barra-volume{
+        width: 20%;  
+    }
+
+    .icone-destra-barra-volume i{
+        font-size: 0.7em;
+    }
 }
 
 @media screen and (max-width: 950px){
@@ -402,6 +419,6 @@ nav h3{
 @media screen and (max-width: 750px){
 
     .elemento-copertina-descrizione{
-        width: 35%;
+        width: 45%;
     }
 }
