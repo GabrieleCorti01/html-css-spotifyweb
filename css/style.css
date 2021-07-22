@@ -294,8 +294,9 @@ nav h3{
 }
 
 #contenitore-elementi h1{
-    padding: 40px 0 15px 0;
+    padding: 100px 0 15px 0;
     color: white;
+    font-size: 2em;
 }
 
 #navi-elementi{
