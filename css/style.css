@@ -175,6 +175,10 @@ body{
     align-self: center;
 }
 
+.sottotitolo-row{
+    
+}
+
 #sidebar-nav{
     width: 200px;
     height: calc(100% - 100px);
@@ -294,3 +298,4 @@ nav h3{
     font-size: 0.7em;
     padding-left: 10px;
 }
+
