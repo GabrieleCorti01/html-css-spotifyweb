@@ -78,7 +78,6 @@ body{
     height: calc(100% - 80px);
     background-image: url(../img/metal_lifting.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .container-footer{
@@ -96,7 +95,7 @@ body{
     width: 60px;
     height: 60px;
     background-image: url(../img/sinister.jpeg);
-    background-size: contain;
+    background-size: cover;
 }
 
 .descrizione-riproduzione{
@@ -297,3 +296,46 @@ nav h3{
     padding-left: 10px;
 }
 
+#stranger-things{
+    background-image: url(../img/stranger.jpeg);
+}
+
+#quiet-place{
+    background-image: url(../img/aquietplace.jpeg);
+}
+
+#split{
+    background-image: url(../img/split.jpeg);
+}
+
+#cure-wellness{
+    background-image: url(../img/cure.jpeg);
+}
+
+#sinister{
+    background-image: url(../img/sinister.jpeg);
+}
+
+#release-radar{
+    background-image: url(../img/radar.jpeg);
+}
+
+#daily-mix{
+    background-image: url(../img/mixdaily.jpeg);
+}
+
+#lana-del-rey{
+    background-image: url(../img/youg.jpeg);
+    border-radius: 50%;
+}
+
+#ludovico-einaudi{
+    background-image: url(../img/einaudi.jpeg);
+    border-radius: 50%;
+}
+
+/* @media screen and (max-width: 1000px) {
+    .riga-contenitore-elementi{
+        flex-wrap: wrap;
+    }
+} */
