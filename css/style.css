@@ -80,8 +80,8 @@ body{
     background-repeat: no-repeat;
 }
 
-.contenitore-doppio{
-    width: 35%;
+.contenitore-elementi{
+    justify-content: space-between;
 }
 
 .container-footer{
@@ -154,6 +154,25 @@ body{
     border: 2px solid white;
     margin-top: 25px;
     border-radius: 20px;
+}
+
+.icone-destra-barra-volume{
+    color: white;
+    align-self: center;
+    padding-right: 5px;
+}
+
+.icone-destra-barra-volume i{
+    padding-right: 10px;
+    font-size: 0.8em;
+}
+
+.barra-volume{
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    align-self: center;
 }
 
 #sidebar-nav{
@@ -257,7 +276,7 @@ nav h3{
 }
 
 #contenitore-elementi h1{
-    padding: 20px 0 20px 0;
+    padding: 40px 0 20px 0;
     color: white;
 }
 
