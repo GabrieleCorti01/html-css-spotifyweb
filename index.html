@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify Web</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -15,52 +15,148 @@
 
 </head>
 <body>
-    <!-- CONTAINER RESET FLEXBOX -->
-    <div class="container">
-        <main class="clearfix">
-            
-    <!-- INIZIO SEZIONE BARRA DI NAVIGAZIONE LATERALE -->
-            <nav class="fl flex-box" id="barra-navigazione">
-                <img src="img/logo.svg" alt="Immagine logo Spotify">
+    <div class="container clearfix">    
+         
+        <!-- INIZIO SIDEBAR -->
+            <section class="fl" id="sidebar-nav">
+                <nav>
+                    <img src="img/logo.svg" alt="">
 
-                <ul class="lista-sidebar">
-                    <li><i class="fas fa-home"></i>Home</li>
-                    <li><i class="fas fa-search"></i>Cerca</li>
-                    <li><i class="fas fa-book-dead"></i> Libreria</li>
-                </ul>
-    <!-- INIZIO SEZIONE DELLA PLAYSLIST CON LA LISTA -->
-                <div class="container-playlist">
-                    <h3>PLAYLIST</h3>
-                    <div><i class="fas fa-plus-circle"></i> Crea Playlist</div>
-                    <ul class="lista-playlist">
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
-                        <li>Nome Playlist</li>
+            <!-- LISTA HOME CERCA LIBRERIA SIDEBAR -->
+                    <ul class="lista-sidebar">
+                        <li><i class="fas fa-home"></i>Home</li>
+                        <li><i class="fas fa-search"></i>Cerca</li>
+                        <li><i class="fas fa-book-dead"></i> Libreria</li>
                     </ul>
-                </div>
-    <!-- FOOTER SIDEBAR PROFILO E DOWNLAOD -->
-                <div class="container-profilo">   
-                    <div class="profilo-download flex-box">
-                        <span><i class="far fa-arrow-alt-circle-down"></i>Installa app</span>
-                        <div><i class="far fa-user-circle"></i><span> GABRIELE CORTI</span></div>
-                    </div>
-                </div> 
-            </nav>
 
-    
-    <!-- CONTENITORE DELLA SEZIONE MAIN -->
-            <section class="fl flex-box" id="container-main">
-    
+            <!-- PLAYLIST ICONA E TESTO -->
+                    <h3>PLAYLIST</h3>
+                    <div id="icona-testo-playlist"><i class="fas fa-plus-circle"></i>Crea Playlist</div>
+
+            <!-- LISTA NOME PLAYLIST -->
+            <ul id="lista-nome-playlist">
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+                <li>Nome Playlist</li>
+            </ul>
+
+            <!-- PROFILO E DOWNLOAD APP SIDEBAR -->
+            <div id="contenitore-user-download">
+                <span><i class="far fa-arrow-alt-circle-down"></i>Installa app</span>
+                <p><i class="far fa-user-circle"></i> Gabriele Corti</p>
+            </div>
+                </nav>
             </section>
-        </main>
-    <!-- INIIO SEZIONE FOOTER -->
-        <footer>
-            <div id="container-footer"></div>
-        </footer>
+
+        <!-- INIZIO SEZIONE PRINCIPALE -->
+            <section class="fl clearfix" id="main-section">
+                
+            <!-- CONTENITORE BOTTONE UPGRADE -->
+                <div class="fr flex-box" id="contenitore-upgrade">
+                    <div class="fr flex-box" id="bottone-upgrade">
+                        <span id="upgrade-testo">EFFETTUA L'UPGRADE</span>
+                    </div>
+                </div>
+
+            <!-- CONTENITORE ELEMENTI INTERNI -->
+            <div class="flex-box clearfix" id="contenitore-elementi">
+
+            <!-- MENU NAVIGAZIONE ALTO SEZIONE ELEMENTI -->
+                <nav class="flex-box" id="navi-elementi">
+                    <ul>
+                        <li>IN EVIDENZA</li>
+                        <li>PODCAST</li>
+                        <li>CLASSIFICHE</li>
+                        <li>GENERI E MOOD</li>
+                        <li>NUOVE USCITE</li>
+                        <li>SCOPRI</li>
+                    </ul>
+                </nav>
+
+            <!-- ELEMENTI/CANZONI COPN RISPETTIVA DESCRIZIONE -->
+                <h1>Ascoltate di Recente</h1>   
+            <!-- CONTENITORE DOPPIO PER ELEMENTI IN FILA -->
+                <div class="fl clearfix contenitore-doppio">
+                <!-- PRIMO ELEMENTO -->
+                    <div class="fl elemento-copertina-descrizione">
+                        <div class="background-copertina"></div>
+                        <div class="descrizione-elemento flex-box">
+                            <p>Heavy Metal</p>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                <!-- SECONDO ELEMENTO -->
+                    <div class="fl elemento-copertina-descrizione">
+                        <div class="background-copertina"></div>
+                        <div class="descrizione-elemento flex-box">
+                            <p>Heavy Metal</p>
+                            <p>Subtitle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECONDO CONTENITORE DOPPIO PER ELEMENTI IN FILA -->
+                <div class="fl clearfix contenitore-doppio">
+                    
+                        <div class="fl elemento-copertina-descrizione">
+                            <div class="background-copertina"></div>
+                            <div class="descrizione-elemento flex-box">
+                                <p>Heavy Metal</p>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                   
+                        <div class="fl elemento-copertina-descrizione">
+                            <div class="background-copertina"></div>
+                            <div class="descrizione-elemento flex-box">
+                                <p>Heavy Metal</p>
+                                <p>Subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                
+            </div>
+            </section>
+
+            <section id="footer-section">
+                <div class="flex-box container-footer">
+                    <div class="flex-box contenitore-canzone-riprodotta">
+                        <div class="background-immagine-riproduzione"></div>
+                        <div class="flex-box descrizione-riproduzione">
+                            <p>Sinister</p>
+                            <p>Brano Nome</p>
+                        </div>
+                        <div class="flex-box icone-riproduzione">
+                            <i class="far fa-heart"></i>
+                            <i class="far fa-folder"></i>
+                        </div>
+                    </div>
+
+                <!-- CONTENITORE BARRA DI RIPRODUZIONE -->
+                    <div class="icone-superiori">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div >
+                    
+                    <div class="flex-box">
+                        <span>0.25</span>
+                        <div class="barra-riproduzione"></div>
+                        <span>4.25</span>
+                    </div>
+                    
+                    <div>
+                        ciao
+                    </div>
+                </div>
+            </section>
     </div>
 </body>
-</html>
+</html> 

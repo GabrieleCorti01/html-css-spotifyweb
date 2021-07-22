@@ -9,14 +9,14 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+.flex-box{
+    display: flex;
+}
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-nav img{
-    height: 40px;
 }
 
 .fr{
@@ -27,107 +27,242 @@ nav img{
     float: left;
 }
 
-.flex-box{
-    display: flex;
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: lightpink;
 }
 
 .lista-sidebar{
     list-style: none;
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lista-sidebar i{
+    font-size: 1.5em;
+    padding-right: 10px;
 }
 
 .lista-sidebar li{
-    padding-top: 10px;
-    font-size: 0.8em;
+    padding-top: 8px;
 }
 
-li i{
-    font-size: 1.7em;
-    padding-right: 10px;
+.elemento-copertina-descrizione{
+    height: 300px;
+    width: 250px;
 }
 
-.container-playlist h3{
-    color: white;
-    font-size: 0.9em;
-    padding-top: 30px;
-}
-
-.container-playlist div{
-    font-size: 0.8em;
-    padding-top: 10px;
-    
-}
-
-.container-playlist i{
-    font-size: 2.8em;
-    vertical-align: middle;
-    padding-right: 5px;
-}
-
-.lista-playlist{
-    list-style: none;
-    padding-top: 15px;
-}
-
-.lista-playlist li{
-    padding-bottom: 15px;
-    font-size: 0.8em;
-}
-
-.container-profilo{
-    height: 470px;
-}
-
-.profilo-download{
+.descrizione-elemento{
+    height: 80px;
+    padding: px;
+    text-align: center;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 100%;
+    justify-content: center;
 }
 
-.profilo-download span{
-    font-size: 0.8em;
-    padding-bottom: 10px;
-}
-
-.profilo-download i{
-    padding-right: 10px;
-}
-
-.profilo-download div{
-    vertical-align: middle;
-    border-top: 1px solid rgb(211, 211, 211);
-    padding-top: 10px;
-}
-
-.profilo-download div span{
-    font-size: 0.8em;
+.descrizione-elemento :first-child{
     color: white;
+    font-size: 1.1em;
     font-weight: 700;
 }
 
-.profilo-download  div i{
+.descrizione-elemento :nth-child(2){
+    color: rgb(167, 167, 167);
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+
+.background-copertina{
+    height: calc(100% - 80px);
+    background-image: url(../img/metal_lifting.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenitore-doppio{
+    width: 35%;
+}
+
+.container-footer{
+    justify-content: space-between;
+    
+}
+
+.contenitore-canzone-riprodotta{
+    width: 200px;
+    height: 100px;
+    padding: 20px 10px 20px 10px;
+}
+
+.background-immagine-riproduzione{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/sinister.jpeg);
+    background-size: contain;
+}
+
+.descrizione-riproduzione{
+    padding-left: 10px;
+    flex-direction: column;
+    align-self: center;
+}
+
+.icone-riproduzione{
+    flex-direction: column;
+    align-self: center;
+    padding-left: 30px;
+    font-size: 1.1em;
+    color:rgb(167, 167, 167)
+}
+
+.icone-riproduzione i{
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+.descrizione-riproduzione :first-child{
+    color: white;
+    font-size: 0.7em;
+}
+
+.descrizione-riproduzione :nth-child(2){
+    color: rgb(167, 167, 167);
+    font-size: 0.6em;
+}
+
+.icone-superiori{
+    color: white;
+    font-size: 1.1em;
+}
+
+.icone-superiori i{
+    padding-left: 8px;
+    padding-right: 8px;
+    align-self: center;
+}
+
+.icone-superiori :nth-child(3){
     font-size: 1.5em;
 }
 
-#barra-navigazione{
+#sidebar-nav{
     width: 200px;
     height: calc(100% - 100px);
     background-color: black;
-    color: rgb(211, 211, 211);
-    padding: 25px;
+    padding: 20px;
+    color: rgb(167, 167, 167);
+    position: relative;
+}
+
+nav h3{
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#main-section{
+    width: calc(100% - 200px);
+    height: 100%;
+    background-color: lightyellow;
+}
+
+#footer-section{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(40, 40, 40);
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+}
+
+#icona-testo-playlist{
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+
+#icona-testo-playlist i{
+    font-size: 2.3em;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+#lista-nome-playlist{
+    list-style: none;
+    font-size: 0.8em;
+}
+
+#lista-nome-playlist li{
+    padding-bottom: 10px;
+}
+
+#contenitore-user-download{
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+}
+
+#contenitore-user-download span{
+    font-size: 0.7em;
+}
+
+#contenitore-user-download p{
+    font-size: 0.8em;
+    font-weight: 700;
+    color: white;
+    border-top: 1px solid rgb(167, 167, 167);
+    padding: 10px 0 7px 0;
+}
+
+#contenitore-user-download p i{
+    font-size: 1.7em;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+#contenitore-upgrade{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(8, 11, 18, 222);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+}
+
+#upgrade-testo{
+    color: white;
+    border: 1px solid white;
+    padding: 10px 35px 10px 35px;
+    border-radius: 30px;
+    font-size: 0.8em;
+}
+
+#contenitore-elementi{
+    height: calc(100vh - 100px);
+    width: 100%;
+    background-color: rgb(33, 37, 41);
+    padding: 13px;
+    color: rgb(167, 167, 167);
     flex-direction: column;
 }
 
-#container-main{
-    background-color: thistle;
-    width: calc(100% - 200px);
-    height: 500px;
+#contenitore-elementi h1{
+    padding: 20px 0 20px 0;
+    color: white;
 }
 
-#container-footer{
-    height: 100px;
+#navi-elementi{
     width: 100%;
-    background-color: magenta;
-    z-index: 1000;
-    position: fixed;
+    justify-content: center;
 }
+
+#navi-elementi ul{
+    list-style: none;
+}
+
+#navi-elementi li{
+    display: inline-block;
+    font-size: 0.7em;
+    padding-left: 10px;
+}
+
